@@ -97,7 +97,7 @@ public class MedidasFragment extends Fragment {
                         Log.d(TAG, "Datos: " + datos);
 
                         DataAdapter adapter = (DataAdapter) datosList.getAdapter();
-                        adapter.setDatos(datos);
+                        adapter.setDatos(getContext(), datos);
                         adapter.notifyDataSetChanged();
 
                         progressBar.setVisibility(View.GONE);

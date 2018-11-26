@@ -5,14 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:scaleX="1"
     android:background="@drawable/port"
     tools:context=".activities.MainActivity">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="150"
+        android:layout_weight="1"
+        android:padding="150dp"
         android:src="@drawable/logo_arduino" />
 
     <!--<TextView
