@@ -8,8 +8,8 @@
     android:orientation="vertical"
     android:padding="10dp"
     android:background="#fcfcfc"
-    android:layout_marginTop="10dp"
     android:id="@+id/ll">
+
     <LinearLayout
         android:clipToPadding="false"
         android:gravity="center"

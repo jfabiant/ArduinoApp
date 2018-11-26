@@ -43,7 +43,9 @@ public class MedidasFragment extends Fragment {
     }
 
     @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) {
+    public void onViewCreated(final View view, Bundle savedInstanceState) {
+
+        getView().setClickable(false);
 
         //Inicio progressbar:
         progressBar = getView().findViewById(R.id.progress_bar);
@@ -61,6 +63,8 @@ public class MedidasFragment extends Fragment {
 
                 datosList.setAdapter(new DataAdapter());
                 initialize();
+
+                getView().setClickable(true);
 
             }
         };
