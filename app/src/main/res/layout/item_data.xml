@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cv"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardElevation="0dp"
+    card_view:cardMaxElevation="0dp"
+    card_view:cardCornerRadius="1dp"
+    card_view:cardUseCompatPadding="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingStart="14dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingEnd="16dp">
+
+        <ImageView
+            android:id="@+id/foto_image"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="14dp"
+            android:src="@drawable/ic_no_rain_black_24dp"
+            />
+
+        <com.github.curioustechizen.ago.RelativeTimeTextView
+            android:id="@+id/date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Miercoles 15 Feb."
+            android:layout_toEndOf="@+id/foto_image"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="4dp"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/sensor_lluvia_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lluvia detectada."
+            android:layout_toEndOf="@+id/foto_image"
+            android:layout_below="@+id/date_text"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/temperatura_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="90°"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="4dp"
+            android:textSize="22sp"
+            />
+
+        <TextView
+            android:id="@+id/humedad_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="71°"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/temperatura_text"
+            android:layout_marginEnd="4dp"
+            android:textSize="14sp"
+            />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
