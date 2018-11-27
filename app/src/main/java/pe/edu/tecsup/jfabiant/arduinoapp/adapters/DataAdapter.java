@@ -1,35 +1,21 @@
 package pe.edu.tecsup.jfabiant.arduinoapp.adapters;
 
-import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.Context;
-import android.content.DialogInterface;
-import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomSheetDialog;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import java.text.DateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import pe.edu.tecsup.jfabiant.arduinoapp.R;
-import pe.edu.tecsup.jfabiant.arduinoapp.activities.DashboardActivity;
-import pe.edu.tecsup.jfabiant.arduinoapp.activities.MainActivity;
-import pe.edu.tecsup.jfabiant.arduinoapp.fragments.FullscreenDialogFragment;
 import pe.edu.tecsup.jfabiant.arduinoapp.fragments.MedidasFragment;
 import pe.edu.tecsup.jfabiant.arduinoapp.models.Data;
 import com.github.curioustechizen.ago.RelativeTimeTextView;
@@ -82,10 +68,10 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder>{
             public void onClick(View view) {
 
                 FragmentManager fragmentManager = ((FragmentActivity)mContext).getSupportFragmentManager();
-                FullscreenDialogFragment newFragment = new FullscreenDialogFragment();
+                MedidasFragment newFragment = new MedidasFragment();
                 FragmentTransaction transaction = fragmentManager.beginTransaction();
                 transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-                transaction.add(android.R.id.content, newFragment).addToBackStack(null).commit();
+                transaction.add(android.R.layout.fragment_container, newFragment).addToBackStack(null).commit();
 
             }
         });

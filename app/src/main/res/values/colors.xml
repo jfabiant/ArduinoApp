@@ -18,4 +18,10 @@
     <color name="album_title">#4c4c4c</color>
     <color name="white">#fff</color>
 
+    <color name="splashBackground">#607d8b</color>
+
+    <color name="text_light">#ffffff</color>
+    <color name="text_dark">#000000</color>
+    <color name="tab_indicator">#ffffff</color>
+
 </resources>

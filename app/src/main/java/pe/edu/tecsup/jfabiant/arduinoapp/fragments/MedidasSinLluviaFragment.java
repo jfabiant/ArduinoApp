@@ -72,7 +72,6 @@ public class MedidasSinLluviaFragment extends Fragment {
             }
         }, 1000, 1000);
 
-
     }
 
     private void initialize () {
